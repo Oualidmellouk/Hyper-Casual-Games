@@ -1,7 +1,9 @@
+/* General Styles */
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #121212, #1e1e1e);
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: white;
   display: flex;
   justify-content: center;
@@ -12,57 +14,58 @@ body {
 .container {
   text-align: center;
   padding: 2rem;
-  width: 100%;
   max-width: 600px;
+  width: 90%;
 }
 
+/* Header Styles */
 .hero-image {
-  width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   border-radius: 20px;
-  margin-bottom: 1rem;
   box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
 .subtitle {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #ccc;
   margin-bottom: 2rem;
 }
 
-.search-bar {
-  padding: 0.8rem;
-  width: 80%;
-  max-width: 350px;
+/* Input and Button */
+.input {
+  padding: 1rem;
   border: none;
   border-radius: 10px;
-  margin-bottom: 1.5rem;
+  width: 80%;
+  max-width: 350px;
   font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.download-btn {
+.button {
   display: inline-block;
-  padding: 0.9rem 2rem;
-  background: #00c9a7;
-  color: #fff;
+  background-color: #00c9a7;
+  color: white;
+  padding: 1rem 2rem;
   font-weight: bold;
-  border-radius: 30px;
   text-decoration: none;
-  transition: background 0.3s;
+  border-radius: 30px;
+  transition: background 0.3s ease;
 }
 
-.download-btn:hover {
-  background: #00b097;
+.button:hover {
+  background-color: #00a98e;
 }
 
+/* Footer */
 .footer {
   margin-top: 3rem;
   font-size: 0.9rem;
-  color: #777;
+  color: #aaa;
 }
