@@ -1,0 +1,10 @@
+
+import { useEffect } from "react"; import { motion } from "framer-motion"; import confetti from "canvas-confetti";
+export default function BirthdayApp() { useEffect(() => { // إطلاق الكونفيتي عند الدخول confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
+// تشغيل الموسيقى تلقائياً const audio = new Audio('/birthday-song.mp3'); // ضع ملف الموسيقى في public folder audio.play(); 
+}, []);
+const throwConfetti = () => { confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 } }); };
+return ( 
+
+<motion.h1 initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 1 }} className="text-5xl font-bold text-white drop-shadow-lg mb-6" > 🎉 Happy Birthday Sohaila 🎉 </motion.h1> <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 1 }} className="text-xl text-white mb-8" > Wishing you a wonderful day filled with joy and surprises! 🎂🎁 </motion.p> <button onClick={throwConfetti} className="px-6 py-3 bg-white text-purple-600 font-semibold rounded-2xl shadow-lg hover:scale-105 transition" > 🎊 Celebrate Again 🎊 </button> </div> 
+); }
